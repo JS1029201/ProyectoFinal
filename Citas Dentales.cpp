@@ -15,7 +15,6 @@ void Guardar();
 struct Citas {
 	int cant_tratamiento = 0, tratamiento = 0, num_de_cita = 0;
 	string nombre, fecha, hora;
-
 	Citas* ant = nullptr;
 	Citas* sig = nullptr;
 };
@@ -201,7 +200,7 @@ void Lista() {
 			case 3:
 				costunit = 200;
 				cout << "Extraccion de Muelas." << endl;
-				cout << "Descripcion: Este es uno de los tratamientos más utilizados, ya que conforme pasa el tiempo, se necesita ectaer algunas piezas bucales.";
+				cout << "Descripcion: Este es uno de los tratamientos mÃ¡s utilizados, ya que conforme pasa el tiempo, se necesita ectaer algunas piezas bucales.";
 				break;
 
 			}
@@ -260,7 +259,7 @@ void Modificar() {
 			}
 
 			cout << endl;
-			cout << "Elija la información a modificar: " << endl << endl;
+			cout << "Elija la informaciÃ³n a modificar: " << endl << endl;
 			cout << "1 Nombre del paciente." << endl;
 			cout << "2 Fecha de la cita." << endl;
 			cout << "3 Hora de la cita." << endl;
@@ -333,7 +332,7 @@ void Modificar() {
 							mod->tratamiento = 3;
 							break;
 
-						default: cout << "\nDigite una opción válida.";
+						default: cout << "\nDigite una opciÃ³n vÃ¡lida.";
 
 						}
 					}
@@ -348,7 +347,7 @@ void Modificar() {
 				}
 
 				default:
-					cout << "\nIngrese un dígito válido.";
+					cout << "\nIngrese un dÃ­gito vÃ¡lido.";
 					system("pause");
 				}
 		}
@@ -565,13 +564,13 @@ void Guardar() {
 				switch (aux->tratamiento) {
 				case 1: 
 					guardar << "Blanqueamiento Dental." << endl;
-					guardar << "Descripción: Consiste en quitar todas las manchas dentales que pueden tener los dientes.";
+					guardar << "DescripciÃ³n: Consiste en quitar todas las manchas dentales que pueden tener los dientes.";
 					costunit = 100;
 					break;
 				
 				case 2: 
 					guardar << "Carillas Bucales." << endl;
-					guardar << "Descripcion: Las carillas bucales son un tipo de tratamiento dental que tiene un fin estético y natural.";
+					guardar << "Descripcion: Las carillas bucales son un tipo de tratamiento dental que tiene un fin estÃ©tico y natural.";
 					costunit = 150;
 					break;
 				
